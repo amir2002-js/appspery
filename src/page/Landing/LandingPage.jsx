@@ -1,5 +1,6 @@
 import Demo from "./Demoes/Demo";
 import Header from "./Navbar/Header";
+import Possibilities from "./Possibilities/Possibilities";
 
 function LandingPage({ cls }) {
 	return (
@@ -9,6 +10,9 @@ function LandingPage({ cls }) {
 
 			{/* <----- light demo -----> */}
 			<Demo />
+
+			{/* <----- Possibilities site -----> */}
+			<Possibilities />
 		</div>
 	);
 }

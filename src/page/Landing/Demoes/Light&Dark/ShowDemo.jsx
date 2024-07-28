@@ -1,20 +1,12 @@
+import BlueLine from "../../RepeatingComponents/BlueLine";
+import ShowText from "../../RepeatingComponents/ShowText";
+
 export default function ShowDemo({ dataImg, dataText }) {
 	return (
 		<>
-			<div className="mt-32 flex flex-col gap-10 justify-center items-center">
-				{/* <----- headText -----> */}
-				<p className="font-vazir-bold text-3xl">{dataText.head}</p>
-
-				<span className="w-32 h-[1px] rounded-full bg-gradient-to-r from-blue-400/0 via-blue-600 to-blue-400/0"></span>
-
-				{/* <----- caption Text -----> */}
-				<figcaption className="text-slate-600 text-sm text-center container max-w-[800px]">
-					{dataText.par}
-				</figcaption>
-			</div>
+			<ShowText par={dataText.par} head={dataText.head} cap={null} />
 			<div className="mt-20">
 				<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-between items-center gap-10">
-
 					{/* <----- show images -----> */}
 					{dataImg.map((img, index) => (
 						<div
