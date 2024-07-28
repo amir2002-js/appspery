@@ -38,7 +38,7 @@ export default function Possibilities() {
 	return (
 		<div className="container max-w-maxWidth">
 			<ShowText cap={text.cap} head={text.head} par={text.par} />
-			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-items-center gap-3 mt-20 justify-center items-start mb-6">
+			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-items-center gap-12 mt-20 justify-center items-start mb-6">
 				{items.map((item, i) => (
 					<PossibilityItems
 						key={i}
