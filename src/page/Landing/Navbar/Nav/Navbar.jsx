@@ -4,6 +4,15 @@ export default function Navbar({ cls }) {
 			className={`${cls} fixed top-0 w-full transition-all duration-300 z-50`}
 		>
 			<div className="max-w-maxWidth container flex justify-between py-5">
+
+				{/* <----- logo -----> */}
+				<img
+					src="../src/images/logo-light.png"
+					alt=""
+					width={"120px"}
+				/>
+
+
 				{/* <----- menu -----> */}
 				<ul className="flex flex-row-reverse text-gray-100 gap-6">
 					<li>
@@ -22,13 +31,7 @@ export default function Navbar({ cls }) {
 						</button>
 					</li>
 				</ul>
-
-				{/* <----- logo -----> */}
-				<img
-					src="../src/images/logo-light.png"
-					alt=""
-					width={"120px"}
-				/>
+				
 			</div>
 		</nav>
 	);
