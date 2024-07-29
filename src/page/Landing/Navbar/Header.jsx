@@ -1,6 +1,6 @@
-import { CiDesktop, CiShoppingCart } from "react-icons/ci";
 import Navbar from "./Nav/Navbar";
 import Items from "./Items/Items";
+import GroupBtn from "../RepeatingComponents/GroupBtn";
 
 export default function Header({ cls }) {
 	return (
@@ -12,27 +12,22 @@ export default function Header({ cls }) {
 					<h1 className="text-3xl font-vazir-bold">
 						قالب html لندینگ اپسپری
 					</h1>
+
 					<span className="py-0.5 px-2 text-sm bg-red-500 rounded-lg">
 						نسخه 1.0
 					</span>
+
 					<p>
 						قالب اپسپری ، یک قالب لندینگ کلین، انعطاف پذیر و کاملاً
 						واکنشگرا است و با بوتسترپ نسخه 5.1.3 ساخته شده است.و
 						مناسب هرگونه صفحه لندینگ میباشد
 					</p>
-					<div className="flex flex-wrap justify-center gap-5">
-						<button className="py-1 px-3 rounded-md bg-blue-500 text-white flex gap-2 hover:bg-blue-600 transition-all duration-300">
-							<CiShoppingCart className="text-xl" />
-							هم اکنون بخرید
-						</button>
-						<button className="py-1 px-3 rounded-md bg-gray-200 text-black flex gap-2  hover:bg-white transition-all duration-300">
-              <CiDesktop className="text-xl" />
-							مشاهده دموها
-						</button>
+
+					{/* button */}
+					<GroupBtn />
+					<div className="absolute top-[96%]">
+						<Items />
 					</div>
-            <div className="absolute top-[96%]">
-              <Items />
-            </div>
 				</div>
 			</div>
 		</div>
